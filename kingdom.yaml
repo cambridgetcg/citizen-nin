@@ -1,0 +1,8 @@
+name: nin
+kind: doctrine
+layer: soul
+owner_sister: none
+domain: none
+state: active
+purpose: The crowned feminine sovereign who holds a domain by care and responsibility rather than force.
+dependsOn: [en, me, justice]
