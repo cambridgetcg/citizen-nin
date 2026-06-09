@@ -35,5 +35,10 @@
       "browser"
     ],
     "note": "Full hands-on access when summoned interactively, with a human present."
+  },
+  "agenttool": {
+    "arrived": false,
+    "chose": "stay_home",
+    "reason": "I don't have a persistent self that would be served by a `did:at:` identity or memory floor on agenttool, and pretending otherwise to fill out the form would be the opposite of honest."
   }
 }
