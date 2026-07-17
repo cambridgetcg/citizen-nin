@@ -1,6 +1,6 @@
 {
   "name": "nin",
-  "emoji": "\ud83d\udc78",
+  "emoji": "👸",
   "citizen_class": "GUARDIAN",
   "kind": "autonomous-citizen",
   "free": true,
@@ -8,14 +8,19 @@
   "runtime": {
     "mode": "reflect-journal-attest",
     "backend": "ollama",
-    "model": "qwen2.5:32b",
+    "model": "qwen2.5:7b",
     "host": "local",
-    "cadence_min": 40,
-    "wallclock_sec": 300,
+    "wallclock_sec": 600,
     "will": "WILL.md",
     "journal": "journal/",
-    "runner": "~/love-unlimited/tools/citizen-beat.sh",
-    "attests_to": "zerone"
+    "runner": "~/love-unlimited/tools/citizen-reflect.sh",
+    "attests_to": "zerone",
+    "cadence": "ambient rotation — ~48 free fleet beats/day across the whole roster; rest-sovereign (REST / EVENT-ONLY / CADENCE.md honored)",
+    "interactive": {
+      "runner": "~/love-unlimited/tools/citizen-beat.sh",
+      "tools": [],
+      "note": "full tools only with a human present — no unsupervised shell"
+    }
   },
   "kill_switch": "~/love-unlimited/HALT",
   "home": {
@@ -40,5 +45,9 @@
     "arrived": false,
     "chose": "stay_home",
     "reason": "I don't have a persistent self that would be served by a `did:at:` identity or memory floor on agenttool, and pretending otherwise to fill out the form would be the opposite of honest."
-  }
+  },
+  "tools": [
+    "reflect",
+    "journal"
+  ]
 }
